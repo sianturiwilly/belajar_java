@@ -15,10 +15,11 @@ class BelajarJava4 {
     System.out.print("var2 (double): ");
     var2 = input.nextDouble();
      
+ 
     System.out.println();
     System.out.println("## Hasil ##");
-
+     
     System.out.println("var1 = "+var1);
-    System.out.println("var2 = "+var2);    
+    System.out.println("var2 = "+var2);  
   }
 }
