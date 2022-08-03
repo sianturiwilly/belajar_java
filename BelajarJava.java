@@ -1,39 +1,22 @@
-import java.util.Scanner;
-import java.util.Locale;
- 
 class BelajarJava {
   public static void main(String args[]){
+        
+    int     var1 = 56;
+    double  var2 = 0.543;
+    boolean var3 = true;
+    char    var4 = 'A';
+    String  var5 = "Duniailkom";
+    int[]   var6 = {4, 7, 3, 8, 1};
      
-    String nama;
-    int umur;
-    double ipk;
-    String alamat;
+    System.out.println(var1);
+    System.out.println(var2);
+    System.out.println(var3);
+    System.out.println(var4);
+    System.out.println(var5);
      
-    Scanner input = new Scanner(System.in).useLocale(Locale.US);
-     
-    System.out.println("## Biodata Mahasiswa ##");
-    System.out.println("=======================");   
-    System.out.println();
-     
-    System.out.print("Nama: ");
-    nama = input.nextLine();
-     
-    System.out.print("Umur: ");
-    umur = input.nextInt();
+    for (int i : var6) {
+      System.out.print(i +" ");
+    }
  
-    System.out.print("IPK: ");
-    ipk = input.nextDouble();   
-    input.nextLine();
-    
-    System.out.print("Alamat: ");
-    alamat = input.nextLine();
-   
-    System.out.println("=======================");   
-    System.out.println();
-     
-    System.out.print(nama + " berusia "+ umur + " tahun, ");
-    System.out.print("memiliki IPK " + ipk);
-    System.out.print(" dan beralamat di " + alamat);
-     
   }
 }
