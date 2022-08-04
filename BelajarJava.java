@@ -1,29 +1,20 @@
+import java.util.Scanner;
+ 
 class BelajarJava {
   public static void main(String args[]){
-         
-    int a = 10, b = 10, c = 10, d = 10, e = 10, f = 10; 
      
-    System.out.println("Operator assignment gabungan bahasa Java");  
-    System.out.println("========================================"); 
-    System.out.println("Variabel a, b, c, d, e, f = 10 \n"); 
+    int a;
+    Scanner input = new Scanner(System.in);
+     
+    System.out.print("Input sembarang angka: ");
+    a = input.nextInt();
  
-    a += 5;
-    System.out.println("Hasil operasi a += 5: "+ a);
-     
-    b -= 3;
-    System.out.println("Hasil operasi b -= 3: "+ b);
-     
-    c *= 3;
-    System.out.println("Hasil operasi c *= 3: "+ c);
-     
-    d /= 3;
-    System.out.println("Hasil operasi d /= 3: "+ d);
-     
-    e %= 3;
-    System.out.println("Hasil operasi e %= 3: "+ e);
-     
-    f <<= 2;
-    System.out.println("Hasil operasi f <<= 2: "+ f);
-       
+    if (a % 2 == 0) {
+      System.out.println(a + " adalah angka genap");
+    }
+    if (a % 2 == 1) {
+      System.out.println(a + " adalah angka ganjil");
+    }
+    
   }
 }
