@@ -1,20 +1,12 @@
-import java.util.Scanner;
- 
 class BelajarJava {
+   
   public static void main(String args[]){
-     
-    int a;
-    Scanner input = new Scanner(System.in);
-     
-    System.out.print("Input sembarang angka: ");
-    a = input.nextInt();
- 
-    if (a % 2 == 0) {
-      System.out.println(a + " adalah angka genap");
+    int i;
+    for (i = 0; i < 5; i++) {
+      System.out.println(i);
     }
-    if (a % 2 == 1) {
-      System.out.println(a + " adalah angka ganjil");
-    }
-    
+  
+    System.out.println("Nilai i setelah loop: "+i);
   }
+   
 }
